@@ -604,11 +604,11 @@ class GitAutoDeploy(object):
 def main():
     import signal
     from gitautodeploy import GitAutoDeploy
-    from cli.config import get_config_defaults, get_config_from_environment
-    from cli.config import get_config_from_argv, find_config_file
-    from cli.config import get_config_from_file, get_repo_config_from_environment
-    from cli.config import init_config, get_config_file_path, rename_legacy_attribute_names
-    from cli.config import ConfigFileNotFoundException, ConfigFileInvalidException
+    from .cli.config import get_config_defaults, get_config_from_environment
+    from .cli.config import get_config_from_argv, find_config_file
+    from .cli.config import get_config_from_file, get_repo_config_from_environment
+    from .cli.config import init_config, get_config_file_path, rename_legacy_attribute_names
+    from .cli.config import ConfigFileNotFoundException, ConfigFileInvalidException
     import logging
     import sys
     import os
